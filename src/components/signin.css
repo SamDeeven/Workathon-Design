@@ -1,0 +1,37 @@
+.left{
+    height:100vh !important;
+  }
+  .fuseicon{
+    width:80px;
+    height:80px;
+  }
+
+.button{
+  font-size: 20px;
+  width:75%;
+}
+.form-group{
+  width:75%;
+  justify-content: center;
+  
+}
+.formBox{
+  justify-content: center;
+  align-items: center;
+
+}
+
+.eyeIcon{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+.remember{
+justify-content: center;
+align-items: center;
+}
+
+.linkBox{
+    cursor: pointer;
+}
