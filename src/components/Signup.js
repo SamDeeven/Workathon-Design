@@ -48,22 +48,7 @@ async function register(credentials) {
     },
     body: JSON.stringify(credentials)
   })
-    .then(res => res.json())
-    .then(data =>{
-
-      if(data){
-          swal("Sign up Success")
-          console.log("Success")
-          navigate('/signin')
-      }
-      else{
-          console.error("Error")
-
-      }
   
-  }).catch(err=>{
-      console.log(err)
-  })
 
  }
 
@@ -82,7 +67,17 @@ async function register(credentials) {
         user_email,
         user_password
     });
+    
+      if(response){
+          swal("Sign up Success")
+          console.log("Success")
+          navigate('/signin')
+      }
+      else{
+          console.error("Error")
 
+      }
+  
 }
 
   return(
