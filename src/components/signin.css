@@ -35,3 +35,27 @@ align-items: center;
 .linkBox{
     cursor: pointer;
 }
+.welcomeText{
+  margin-top:250px;
+  margin-left:50px;
+  font-size:100px ;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.fuseText{
+  margin-left:50px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.lastText{
+  margin-right:500px;
+
+}
+
+.images{
+  margin-left:50px;
+
+}
+.lastDiv{
+  display: flex;
+}
