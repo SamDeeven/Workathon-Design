@@ -17,6 +17,9 @@ const Signup = () =>{
 
 
  
+  fetch("https://snapkaro.com/eazyrooms_staging/api/user_registeration")
+  .then((res)=>res.json())
+  .then((data)=>console.log(data))
 
   
 
@@ -36,17 +39,6 @@ const Signup = () =>{
     let details = {firstname, lastname, email, phone, password, city, zipcode}
     console.log(details)
 
-    fetch("https://snapkaro.com/eazyrooms_staging/api/user_registeration",{
-      method:"GET",
-      headers:{
-        "Accept":"application/json",
-        "Content-Type":"application/json"
-      },
-      body:JSON.stringify()
-    }).then((result)=>{
-      console.log("Result", result)
-    })
-
   }
 
 
@@ -58,7 +50,7 @@ const Signup = () =>{
   return(
     <div className="container-fluid">
       <div className="row">
-        <div className="col-lg-8 left p-3 h-100 bg-dark text-white">
+        <div className="col-lg-8 left p-3 h-100 bg-dark text-white d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block d-block">
           <h1 className="row justify-content-center ">Welcome to our community</h1>
          <p>Fuse helps developers to build organized and well coded dashboards full of beautiful and rich modules. Join us and start building your application today</p>
          <p>More than 17k people joined us, it's your turn</p>
@@ -103,7 +95,7 @@ const Signup = () =>{
                       <div className="form-group p-2">
                         <label>Password*</label>
                         <div>
-                        <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} maxLength="16" className="form-control p-2" id="passwordValue" placeholder="Password (max 16 characters)" required/>
+                        <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} maxLength="16" className="form-control p-2" id="passwordValue" placeholder="Password" required/>
                         <i className="eyeIcon fas fa-eye" id="toggleEye" onClick={seePassword}></i>
 
                         </div>

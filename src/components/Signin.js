@@ -24,14 +24,14 @@ const Signin = () =>{
   return(
     <div className="container-fluid">
       <div className="row">
-        <div className="col-lg-8 col-md-4 left p-3 h-100 bg-dark text-white">
+        <div className="col-lg-8 col-md-4 left p-3 h-100 bg-dark text-white d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block">
           <h1 className="row justify-content-center">Welcome to our community</h1>
          <p>Fuse helps developers to build organized and well coded dashboards full of beautiful and rich modules. Join us and start building your application today</p>
          <p>More than 17k people joined us, it's your turn</p>
           </div>
 
 
-        <div className="col-lg-4 col-md-4 col-sm-12 p-3 d">
+        <div className="col-lg-4 p-3 d">
 
 
                     <form className='formBox row'>
@@ -58,7 +58,7 @@ const Signin = () =>{
                       <div className="form-group p-2">
                         <label>Password*</label>
                         <div>
-                        <input type="password" maxLength="16" className="form-control p-2" id="passwordValue" placeholder="Password (max 16 characters)"/>
+                        <input type="password" maxLength="16" className="form-control p-2" id="passwordValue" placeholder="Password"/>
                         <i className="eyeIcon fas fa-eye" id="toggleEye" onClick={seePassword}></i>
 
                         </div>
