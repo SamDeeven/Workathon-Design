@@ -55,7 +55,7 @@ async function register(credentials) {
 
  async function submitHandler(e){
   e.preventDefault()
-  let details = {user_email, user_password, user_firstname,user_lastname,user_phone,user_city, user_zipcode,user_email,user_password}
+  let details = {user_email, user_password, user_firstname,user_lastname,user_phone,user_city, user_zipcode}
   console.log(details)
 
     const response = await register({
@@ -67,7 +67,7 @@ async function register(credentials) {
         user_email,
         user_password
     });
-    
+
       if(response){
           swal("Sign up Success")
           console.log("Success")
