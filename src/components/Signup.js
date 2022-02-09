@@ -21,7 +21,7 @@ const Signup = () =>{
   const [user_city, setUser_city] = useState("")
   const [user_zipcode, setUser_zipcode] = useState("")
 
-  
+
  // For focussing the first input box after the page render
 useEffect(()=>{
   userRef.current.focus()
@@ -144,7 +144,7 @@ async function register(credentials) {
 
                       <div className="form-group p-2">
                         <label>Password*</label>
-                        <div>
+                        <div className="passwordBox">
                         <input type="password" value={user_password} onChange={(e)=>setUser_password(e.target.value)} maxLength="16" className="form-control p-2" id="passwordValue" placeholder="Password" required/>
                         <i className="eyeIcon fas fa-eye" id="toggleEye" onClick={seePassword}></i>
 
